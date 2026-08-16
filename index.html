@@ -3,168 +3,261 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ITECH Computer Education, Falakata — practical computer education, MS Office, Tally, Programming, AI, Web Design and NIELIT O Level.">
   <title>ITECH Computer Education | Falakata</title>
-  <meta name="description" content="ITECH Computer Education, Falakata - Computer Courses, O Level, Advanced Excel, Python, Tally GST, Web Design and AI for Office Work.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="header">
-  <div class="container nav">
-    <a class="brand" href="#home">
-      <div class="logo">I</div>
-      <div><strong>ITECH</strong><span>Computer Education</span></div>
-    </a>
-    <button class="menu-btn" aria-label="Open menu">☰</button>
-    <nav id="navLinks">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#courses">Courses</a>
-      <a href="#why">Why ITECH</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact">Contact</a>
-      <a class="nav-cta" href="#admission">Admission</a>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="top-item">☎ <a href="tel:+919933018091">9933018091</a></div>
+      <div class="top-item">✉ <a href="mailto:itechedu9@gmail.com">itechedu9@gmail.com</a></div>
+      <div class="top-item">⌖ Bank Road, Subashpally, Falakata, Alipurduar, West Bengal</div>
+      <div class="language-switcher" aria-label="Language selector">
+        <span class="lang-label">Language:</span>
+        <select id="languageSelect" aria-label="Select language">
+          <option value="en">English</option>
+          <option value="bn">বাংলা</option>
+        </select>
+      </div>
+      <div class="social-mini">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="YouTube">▶</a>
+        <a href="https://wa.me/919933018091" aria-label="WhatsApp">◉</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" id="home">
+    <div class="container brand-row">
+      <a class="brand" href="#home">
+        <div class="brand-mark">I<span>T</span></div>
+        <div>
+          <div class="brand-name">ITECH</div>
+          <div class="brand-sub">COMPUTER EDUCATION</div>
+        </div>
+      </a>
+      <div class="brand-center">
+        <div class="bn-title" data-i18n="brand_bn">ITECH Computer Education</div>
+        <div class="en-title" data-i18n="brand_en">ITECH COMPUTER EDUCATION</div>
+        <div class="tagline" data-i18n="tagline">Since 1995 | NIELIT Accredited Center | Govt. Registered (YCTC)</div>
+        <div class="red-tag" data-i18n="red_tag">The key to the future is skill</div>
+      </div>
+      <div class="experience-badge">
+        <strong>30+</strong>
+        <span data-i18n="years_excellence">YEARS OF<br>EXCELLENCE</span>
+        <small data-i18n="since_1995">Since 1995</small>
+      </div>
+    </div>
+
+    <nav class="nav" id="nav">
+      <div class="container nav-inner">
+        <button class="mobile-toggle" id="mobileToggle">☰</button>
+        <div class="nav-links" id="navLinks">
+          <a class="active" href="#home" data-i18n="nav_home">Home</a>
+          <a href="#about" data-i18n="nav_about">About Us</a>
+          <a href="#courses" data-i18n="nav_courses">Courses</a>
+          <a href="#facilities" data-i18n="nav_facilities">Facilities</a>
+          <a href="#gallery" data-i18n="nav_gallery">Gallery</a>
+          <a href="#students" data-i18n="nav_students">Students Corner</a>
+          <a href="#contact" data-i18n="nav_contact">Contact Us</a>
+        </div>
+        <button class="apply-btn" data-open-admission data-i18n="apply_admission">▣ Apply for Admission</button>
+      </div>
     </nav>
-  </div>
-</header>
+  </header>
 
-<main>
-<section id="home" class="hero">
-  <div class="container hero-grid">
-    <div class="hero-copy">
-      <div class="eyebrow">ESTABLISHED 1995 • FALAKATA</div>
-      <h1>Learn. Create.<br><span>Build Your Future.</span></h1>
-      <p>Modern computer education for school students, beginners and job seekers — from basic computer skills to Python, AI, Web Design, Tally GST and O Level.</p>
-      <div class="hero-actions">
-        <a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSeMOZGpX3AW6Bz4v9aK05Z7czfN7EZJPge7zHejOde1VPRW8w/viewform" target="_blank" rel="noopener">Apply for Admission</a>
-        <a class="btn ghost" href="#courses">Explore Courses</a>
+  <main>
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow" data-i18n="hero_eyebrow">Technology Education • Practical Skills • A Brighter Future</div>
+          <h1 data-i18n-html="hero_title">Learn Skills, <span>Build Your Future</span></h1>
+          <p data-i18n="hero_desc">Modern, practical and career-focused computer education backed by nearly three decades of experience — for beginners to advanced learners.</p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" data-open-admission data-i18n="online_enquiry">Online Admission / Enquiry ↗</button>
+            <a class="btn btn-ghost" href="#courses" data-i18n="explore_courses">Explore Courses ↓</a>
+          </div>
+          <div class="hero-points">
+            <div><b>30+</b><span data-i18n="years_experience">Years Experience</span></div>
+            <div><b data-i18n="students_8500">8500+</b><span data-i18n="students_trained">Students Trained</span></div>
+            <div><b>20+</b><span>Courses</span></div>
+          </div>
+        </div>
+        <div class="hero-card reveal">
+          <div class="hero-card-top">
+            <span>Why ITECH?</span><span class="live-dot">● Admissions Open</span>
+          </div>
+          <div class="hero-feature"><i>♙</i><div><strong data-i18n="experienced_faculty">Experienced Faculty</strong><small data-i18n="concept_practical">Concept + practical learning</small></div></div>
+          <div class="hero-feature"><i>▦</i><div><strong data-i18n="modern_lab">Modern Lab</strong><small data-i18n="hands_on">Hands-on computer practice</small></div></div>
+          <div class="hero-feature"><i>✓</i><div><strong data-i18n="career_focused">Career Focused</strong><small data-i18n="study_jobs_business">Skills for study, jobs & business</small></div></div>
+          <div class="hero-feature"><i>↗</i><div><strong data-i18n="personal_guidance">Personal Guidance</strong><small data-i18n="admission_completion">Support from admission to completion</small></div></div>
+        </div>
       </div>
-      <div class="trust-row">
-        <div><b>30+</b><span>Years of Education</span></div>
-        <div><b>8500+</b><span>Students Trained</span></div>
-        <div><b>Career</b><span>Focused Learning</span></div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-grid">
+        <div class="trust-card"><div class="trust-icon">🎓</div><div><b data-i18n="30_years">30+ Years</b><span data-i18n="of_excellence">of Excellence</span><small data-i18n="since_1995">Since 1995</small></div></div>
+        <div class="trust-card"><div class="trust-icon">🏛</div><div><b data-i18n="nielit">NIELIT</b><span data-i18n="accredited_center">Accredited Center</span><small data-i18n="doeacc_o_level">DOEACC O Level</small></div></div>
+        <div class="trust-card"><div class="trust-icon">✓</div><div><b data-i18n="govt_registered">Govt. Registered</b><span data-i18n="yctc">(YCTC)</span><small data-i18n="directorate">Directorate of Youth Service</small></div></div>
+        <div class="trust-card"><div class="trust-icon">👥</div><div><b data-i18n="students_8500">8500+</b><span data-i18n="students_trained">Students Trained</span><small data-i18n="successfully">Successfully</small></div></div>
       </div>
-    </div>
-    <div class="hero-card">
-      <div class="card-glow"></div>
-      <div class="screen">
-        <div class="screen-top"><i></i><i></i><i></i></div>
-        <div class="code-line w80"></div><div class="code-line w60"></div>
-        <div class="code-line w90"></div><div class="code-line w45"></div>
-        <div class="mini-cards"><span>Python</span><span>AI</span><span>Excel</span></div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-image reveal">
+          <img src="assets/hero-building.jpg" alt="ITECH Computer Education campus">
+          <div class="image-badge"><strong>1995</strong><span>Established</span></div>
+        </div>
+        <div class="about-copy reveal">
+          <span class="section-kicker" data-i18n="about_kicker">ABOUT ITECH</span>
+          <h2 data-i18n-html="about_title">Make computer learning <span>simple, practical and confidence-building</span></h2>
+          <p data-i18n="about_desc">ITECH Computer Education has been helping students, job seekers and new learners build practical computer skills for many years. Our goal is not just a certificate — it is to build skills that are useful for study, jobs, business and everyday digital life.</p>
+          <div class="about-list">
+            <div data-i18n="beginner_teaching">✓ Beginner-friendly teaching</div>
+            <div data-i18n="office_skills">✓ Word, Excel, PowerPoint and office skills</div>
+            <div data-i18n="programming_ai_web">✓ Programming, AI and Web Design</div>
+            <div data-i18n="tally_accounting">✓ Tally with GST and accounting practice</div>
+          </div>
+          <button class="text-btn" data-open-admission data-i18n="start_with_us">Start with us →</button>
+        </div>
       </div>
-      <div class="floating-card"><b>Future Ready</b><small>Skills that matter</small></div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section class="stats">
-  <div class="container stats-grid">
-    <div><b>1995</b><span>Serving Learners</span></div>
-    <div><b>M.Tech</b><span>Experienced Guidance</span></div>
-    <div><b>O Level</b><span>Career-Oriented Course</span></div>
-    <div><b>AI + Coding</b><span>Modern Curriculum</span></div>
-  </div>
-</section>
-
-<section id="about" class="section">
-  <div class="container two-col">
-    <div>
-      <div class="section-tag">ABOUT ITECH</div>
-      <h2>A trusted place to <span>learn technology.</span></h2>
-      <p>ITECH Computer Education, Falakata has been helping learners build practical computer skills since 1995. Our goal is simple: make technology easy to understand, useful in real life and valuable for a career.</p>
-      <p>We combine classroom learning, practical exercises, projects and career-focused guidance for beginners, school students and job seekers.</p>
-      <a class="text-link" href="#contact">Know more about ITECH →</a>
-    </div>
-    <div class="about-box">
-      <div class="about-icon">🎓</div>
-      <h3>Learn from Basics to Advanced</h3>
-      <p>Computer Fundamentals → Office Applications → Programming → Web → AI</p>
-      <div class="check">✓ Practical classes</div>
-      <div class="check">✓ Project-based learning</div>
-      <div class="check">✓ Career-focused courses</div>
-    </div>
-  </div>
-</section>
-
-<section id="courses" class="section courses">
-  <div class="container">
-    <div class="section-head">
-      <div><div class="section-tag">OUR COURSES</div><h2>Choose your <span>learning path.</span></h2></div>
-      <p>Courses designed for today's digital world and tomorrow's opportunities.</p>
-    </div>
-    <div class="course-grid">
-      <article class="course"><div class="course-icon">💻</div><h3>Basic Computer</h3><p>Computer fundamentals, typing, internet, files and digital skills.</p><span>Beginner</span></article>
-      <article class="course"><div class="course-icon">📊</div><h3>MS Office</h3><p>Word, Excel, PowerPoint and practical office productivity.</p><span>Popular</span></article>
-      <article class="course featured"><div class="badge">CAREER</div><div class="course-icon">🐍</div><h3>Python Programming</h3><p>Programming fundamentals, projects, automation and problem solving.</p><span>Future Skill</span></article>
-      <article class="course"><div class="course-icon">🤖</div><h3>AI for Office Work</h3><p>Use modern AI tools for documents, Excel, presentations and productivity.</p><span>Trending</span></article>
-      <article class="course"><div class="course-icon">🌐</div><h3>Web Designing</h3><p>HTML, CSS, JavaScript and responsive website creation.</p><span>Creative</span></article>
-      <article class="course"><div class="course-icon">🧾</div><h3>Tally with GST</h3><p>Accounting, GST, vouchers, reports and practical business workflow.</p><span>Job Skill</span></article>
-      <article class="course"><div class="course-icon">📈</div><h3>Advanced Excel</h3><p>Functions, formulas, data analysis, dashboards and automation basics.</p><span>Professional</span></article>
-      <article class="course"><div class="course-icon">🏅</div><h3>NIELIT O Level</h3><p>Career-oriented computer education with structured learning.</p><span>Certification</span></article>
-    </div>
-  </div>
-</section>
-
-<section id="why" class="section why">
-  <div class="container">
-    <div class="center"><div class="section-tag">WHY ITECH</div><h2>More than a class. <span>A learning experience.</span></h2></div>
-    <div class="why-grid">
-      <div><b>01</b><h3>Practical First</h3><p>Learn by doing, not just memorising.</p></div>
-      <div><b>02</b><h3>Modern Skills</h3><p>AI, Python, Web, Excel and digital productivity.</p></div>
-      <div><b>03</b><h3>Personal Guidance</h3><p>Support for learners at different skill levels.</p></div>
-      <div><b>04</b><h3>Career Focus</h3><p>Build useful skills for study, work and business.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="gallery" class="section gallery">
-  <div class="container">
-    <div class="section-head"><div><div class="section-tag">GALLERY</div><h2>Inside <span>ITECH.</span></h2></div><p>Replace these placeholders with your real classroom and student photos.</p></div>
-    <div class="gallery-grid">
-      <div class="photo p1">ITECH CLASSROOM</div>
-      <div class="photo p2">PRACTICAL LEARNING</div>
-      <div class="photo p3">STUDENT ACTIVITIES</div>
-      <div class="photo p4">COMPUTER LAB</div>
-    </div>
-  </div>
-</section>
-
-<section id="admission" class="section admission">
-  <div class="container admission-box">
-    <div><div class="section-tag">ADMISSION OPEN</div><h2>Ready to start your <span>digital journey?</span></h2><p>Send an enquiry and our team can guide you to the right course.</p></div>
-    <a class="btn primary big" href="https://docs.google.com/forms/d/e/1FAIpQLSeMOZGpX3AW6Bz4v9aK05Z7czfN7EZJPge7zHejOde1VPRW8w/viewform" target="_blank" rel="noopener">Online Admission / Enquiry ↗</a>
-  </div>
-</section>
-
-<section id="contact" class="section contact">
-  <div class="container contact-grid">
-    <div>
-      <div class="section-tag">CONTACT ITECH</div><h2>Let's build your <span>next skill.</span></h2>
-      <p>Visit ITECH Computer Education, Falakata or contact us for course details, admission and counselling.</p>
-      <div class="contact-list">
-        <div>📍 <span>Bank Road, Subashpally, Falakata, Alipurduar, West Bengal</span></div>
-        <div>📞 <a href="tel:+919933018091">+91 99330 18091</a></div>
-        <div>🕘 <span>Contact us for current class timings</span></div>
+    <section class="section courses-section" id="courses">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker" data-i18n="our_courses">OUR COURSES</span>
+          <h2 data-i18n-html="courses_title">The <span>right course</span> for your goals</h2>
+          <p data-i18n="courses_desc">Choose a category — course cards will update dynamically.</p>
+        </div>
+        <div class="filter-tabs" id="courseFilters">
+          <button class="filter active" data-filter="all" data-i18n="all_courses">All Courses</button>
+          <button class="filter" data-filter="basic" data-i18n="basic">Basic</button>
+          <button class="filter" data-filter="office" data-i18n="office">Office</button>
+          <button class="filter" data-filter="professional" data-i18n="professional">Professional</button>
+          <button class="filter" data-filter="programming" data-i18n="programming">Programming</button>
+          <button class="filter" data-filter="advanced" data-i18n="advanced">Advanced</button>
+        </div>
+        <div class="course-grid" id="courseGrid"></div>
       </div>
-    </div>
-    <div class="map-box">
-      <h3>Find ITECH</h3>
-      <p>Open the location in Google Maps.</p>
-      <a class="btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=ITECH+Computer+Education+Falakata">Open Google Maps ↗</a>
-    </div>
-  </div>
-</section>
-</main>
+    </section>
 
-<footer>
-  <div class="container footer-grid">
-    <div><div class="brand"><div class="logo">I</div><div><strong>ITECH</strong><span>Computer Education</span></div></div><p>Learn today. Lead tomorrow.</p></div>
-    <div><b>Quick Links</b><a href="#courses">Courses</a><a href="#admission">Admission</a><a href="#contact">Contact</a></div>
-    <div><b>Connect</b><a href="tel:+919933018091">Call ITECH</a><a href="https://wa.me/919933018091" target="_blank">WhatsApp</a></div>
+    <section class="stats-band">
+      <div class="container stats-grid">
+        <div class="stat"><strong class="counter" data-target="30">0</strong><span data-i18n="years_experience">Years Experience</span></div>
+        <div class="stat"><strong class="counter" data-target="8500">0</strong><span data-i18n="students_trained">Students Trained</span></div>
+        <div class="stat"><strong class="counter" data-target="20">0</strong><span data-i18n="courses_offered">Courses Offered</span></div>
+        <div class="stat"><strong class="counter" data-target="100">0</strong><span data-i18n="practical_focus">Practical Focus %</span></div>
+      </div>
+    </section>
+
+    <section class="section facilities" id="facilities">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker" data-i18n="why_students">WHY STUDENTS CHOOSE US</span>
+          <h2 data-i18n-html="facilities_title">Make your learning experience <span>more practical</span></h2>
+        </div>
+        <div class="facility-grid">
+          <article class="facility-card reveal"><div class="facility-icon">💻</div><h3 data-i18n="practical_lab">Practical Computer Lab</h3><p data-i18n="lab_desc">Learn by doing, with hands-on computer practice.</p></article>
+          <article class="facility-card reveal"><div class="facility-icon">🤖</div><h3 data-i18n="ai_office">AI for Office Work</h3><p data-i18n="ai_desc">Use AI to improve Word, Excel, presentations and productivity skills.</p></article>
+          <article class="facility-card reveal"><div class="facility-icon">👨‍🏫</div><h3 data-i18n="guided_learning">Guided Learning</h3><p data-i18n="guided_desc">Step-by-step explanation, practice tasks and guidance to correct mistakes.</p></article>
+          <article class="facility-card reveal"><div class="facility-icon">📈</div><h3 data-i18n="career_skills">Career-oriented Skills</h3><p data-i18n="career_desc">Focused on practical digital skills for jobs, business and freelancing.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker" data-i18n="our_gallery">OUR GALLERY</span>
+          <h2 data-i18n-html="gallery_title">Some <span>moments from ITECH</span></h2>
+        </div>
+        <div class="gallery-grid">
+          <button class="gallery-item reveal" data-image="assets/gallery-campus.jpg" data-title="আমাদের ইনস্টিটিউট"><img src="assets/gallery-campus.jpg" alt="Campus"><span data-i18n="our_institute">Our Institute</span></button>
+          <button class="gallery-item reveal" data-image="assets/gallery-lab.jpg" data-title="কম্পিউটার ল্যাব"><img src="assets/gallery-lab.jpg" alt="Computer lab"><span data-i18n="computer_lab">Computer Lab</span></button>
+          <button class="gallery-item reveal" data-image="assets/gallery-class.jpg" data-title="প্র্যাকটিক্যাল ক্লাস"><img src="assets/gallery-class.jpg" alt="Practical class"><span data-i18n="practical_class">Practical Class</span></button>
+          <button class="gallery-item reveal" data-image="assets/gallery-certificate.jpg" data-title="সার্টিফিকেট প্রদান"><img src="assets/gallery-certificate.jpg" alt="Certificate"><span data-i18n="certificate_distribution">Certificate Distribution</span></button>
+          <button class="gallery-item reveal" data-image="assets/gallery-seminar.jpg" data-title="সেমিনার ও ওয়ার্কশপ"><img src="assets/gallery-seminar.jpg" alt="Seminar"><span data-i18n="seminar_workshop">Seminar & Workshop</span></button>
+          <button class="gallery-item reveal" data-image="assets/gallery-event.jpg" data-title="বার্ষিক অনুষ্ঠান"><img src="assets/gallery-event.jpg" alt="Annual event"><span data-i18n="annual_event">Annual Event</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section students-section" id="students">
+      <div class="container student-grid">
+        <div>
+          <span class="section-kicker" data-i18n="students_corner">STUDENTS CORNER</span>
+          <h2 data-i18n-html="student_title">See not only your course, but your <span>progress too</span></h2>
+          <p data-i18n="student_desc">Student dashboard, practice assignments, course progress and admission enquiry — one step toward a future-ready learning experience.</p>
+          <div class="mini-progress">
+            <div><span data-i18n="ms_office_skill">MS Office Skill</span><b>82%</b></div><div class="progress"><i style="width:82%"></i></div>
+            <div><span data-i18n="typing_productivity">Typing & Productivity</span><b>74%</b></div><div class="progress"><i style="width:74%"></i></div>
+            <div><span data-i18n="digital_confidence">Digital Confidence</span><b>91%</b></div><div class="progress"><i style="width:91%"></i></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="quote">“</div>
+          <p id="testimonialText" data-i18n-dynamic="testimonial"></p>
+          <strong id="testimonialName">— ITECH Student</strong>
+          <div class="slider-dots" id="sliderDots"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta-inner">
+        <div><span data-i18n="admission_open">ADMISSION OPEN</span><h2 data-i18n="cta_title">Start your digital journey today</h2><p data-i18n="cta_desc">Enquire to know about courses, fees, batches and admission.</p></div>
+        <button class="btn btn-yellow" data-open-admission data-i18n="apply_now">Apply Now →</button>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#home"><div class="brand-mark">I<span>T</span></div><div><div class="brand-name">ITECH</div><div class="brand-sub">COMPUTER EDUCATION</div></div></a>
+        <p data-i18n="footer_about">Since 1995, ITECH Computer Education has been helping students develop practical computer skills.</p>
+      </div>
+      <div><h3 data-i18n="quick_links">Quick Links</h3><a href="#about" data-i18n="nav_about">About Us</a><a href="#courses" data-i18n="nav_courses">Courses</a><a href="#facilities" data-i18n="nav_facilities">Facilities</a><a href="#gallery" data-i18n="nav_gallery">Gallery</a><a href="#students" data-i18n="nav_students">Students Corner</a></div>
+      <div><h3 data-i18n="contact_us">Contact Us</h3><p>📍 Bank Road, Subashpally,<br>Falakata, Alipurduar,<br>West Bengal</p><a href="tel:+919933018091">☎ 9933018091</a><a href="mailto:itechedu9@gmail.com">✉ itechedu9@gmail.com</a></div>
+      <div><h3 data-i18n="connect_us">Connect With Us</h3><div class="footer-social"><a href="#">f</a><a href="#">▶</a><a href="https://wa.me/919933018091">◉</a></div><button class="footer-apply" data-open-admission data-i18n="footer_enquiry">Enquiry / Admission →</button></div>
+    </div>
+    <div class="copyright">© <span id="year"></span> ITECH COMPUTER EDUCATION. All Rights Reserved. <span>Designed for ITECH</span></div>
+  </footer>
+
+  <div class="modal" id="admissionModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" data-close-modal>×</button>
+      <div class="modal-head"><span class="section-kicker" data-i18n="online_enquiry_kicker">ONLINE ENQUIRY</span><h2 data-i18n="admission_enquiry_title">Admission / Enquiry</h2><p data-i18n="modal_desc">Enter your details — the ITECH team will contact you.</p></div>
+      <form id="admissionForm">
+        <div class="form-grid">
+          <label data-i18n="student_name_label">Student Name<input required name="name" placeholder="Your name"></label>
+          <label data-i18n="mobile_label">Mobile Number<input required name="mobile" inputmode="numeric" placeholder="10 digit mobile"></label>
+          <label data-i18n="course_label">Course<select required name="course"><option value="">Select Course</option></select></label>
+          <label data-i18n="time_label">Preferred Time<select name="time"><option>Morning</option><option>Afternoon</option><option>Evening</option></select></label>
+        </div>
+        <label data-i18n="message_label">Message<textarea name="message" rows="3" placeholder="What would you like to know?"></textarea></label>
+        <button class="btn btn-primary full" type="submit" data-i18n="submit_whatsapp">Submit Enquiry & Continue on WhatsApp ↗</button>
+        <small class="form-note" data-i18n="whatsapp_note">Submitting will open a pre-filled WhatsApp message.</small>
+      </form>
+    </div>
   </div>
-  <div class="copyright">© 2026 ITECH Computer Education, Falakata. All rights reserved.</div>
-</footer>
-<a class="whatsapp" href="https://wa.me/919933018091" target="_blank" aria-label="WhatsApp">☘</a>
-<script src="script.js"></script>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close">×</button>
+    <img id="lightboxImage" src="" alt="">
+    <div id="lightboxTitle"></div>
+  </div>
+
+  <button class="floating-wa" onclick="window.open('https://wa.me/919933018091','_blank')" aria-label="WhatsApp">◉</button>
+  <button class="back-top" id="backTop">↑</button>
+  <script src="script.js"></script>
 </body>
 </html>
